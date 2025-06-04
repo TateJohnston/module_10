@@ -43,8 +43,8 @@ jobs:
         id: docker_build
         uses: docker/build-push-action@v4
         with:
-          context: ./socket-app
-          file: ./socket-app/Dockerfile
+          context: ./socket_module_10_app
+          file: ./socket_module_10_app/Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/socket-app:latest
 
